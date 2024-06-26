@@ -1,20 +1,49 @@
-# user_name = "Murad"
-# age = 17
-# is_admin = False
+#------------ data types and variables
 
-# print(f"Hello, {user_name}. Your age is {age}. Is admin status : {is_admin}")
+# user_name = "John"
+# user_age = 25
+# user_is_admin = True
 
-city = "Baku is capital of Azerbaijan"
-age = "25"
+# print(f"Hello {user_name}, your age is {user_age}. Your admin status is {user_is_admin}.")
 
-# print(len(city))
-# print(city.find("k"))
-# print(city.upper())
-# print(city.lower())
-# print(city.title())
-# print(city.isdigit())
-# print(age.isdigit())
-# print(city.isalpha())
+# city = "Baku is capital of Azerbaijan"
+# age = "25"
+# space = "    hi"
+# splitted_city = city.split(" ")
+
+#------------ string methods
+
+# print(city.capitalize()) 
+# print(city.casefold())
+# print(city.center(60, "*"))
 # print(city.count("i"))
-# print(city.replace("i", "s"))
-# print(city[0:4]*3)
+# print(city.replace("i", "O"))
+# print(city.encode())
+# print(city.endswith("n"))
+# print(city[0:4].endswith("u"))
+# print(city.find("o"))
+# print(city.index("u"))
+# print(space.strip())
+# print(" ".join(splitted_city))
+
+#------------ type casting
+
+# x = 1
+# y = 2.0
+# z = "3"
+
+# x = float(x)
+# y = int(y)
+# z = int(z)
+
+# print(x)
+# print(y)
+# print(z)
+
+
+#------------ input method
+
+# user_name = str(input("Enter your name: "))
+# user_age = int(input("Enter your age: "))
+
+# print(f"Hello {user_name}, your age is {user_age}.")
