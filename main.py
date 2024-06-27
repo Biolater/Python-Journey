@@ -1,3 +1,4 @@
+import math
 #------------ data types and variables
 
 # user_name = "John"
@@ -44,6 +45,26 @@
 #------------ input method
 
 # user_name = str(input("Enter your name: "))
-# user_age = int(input("Enter your age: "))
+# age = int(input("Enter your age: "))
 
-# print(f"Hello {user_name}, your age is {user_age}.")
+# print(f"Hello {user_name}, your age is {age}.")
+
+#------------ math functions
+
+# pi = 3.14
+# root = 9
+# numbers = [1,2,3,4,5]
+
+# print(round(pi))
+# print(math.ceil(pi))
+# print(math.sqrt(root))
+# print(math.floor(pi))
+# print(abs(-pi))
+# print(math.pow(pi,3))
+# print(max(numbers))
+# print(sum(numbers))
+# print(min(numbers))
+
+#------------ string slicing
+
+
