@@ -67,4 +67,20 @@ import math
 
 #------------ string slicing
 
+# name = "Murad Yusubov"
 
+# first_name = name[:5]
+
+# last_name = name[6:]
+
+# funky_name = name[0::2]
+
+# reversed_name = name[::-1]
+
+# website = "https://google.com"
+
+# slice = slice(8,-4)
+
+# website = website[slice]
+
+# print(website)
