@@ -67,20 +67,45 @@ import math
 
 #------------ string slicing
 
-# name = "Murad Yusubov"
+# string = "Hello World"
 
-# first_name = name[:5]
+# only_hello = string[:5]
+# only_world = string[6:]
+# reversed_str = string[::-1]
+# only_hello_slice = slice(0,5)
+# print(only_hello)
+# print(only_world)
+# print(reversed_str)
+# print(string[only_hello_slice])
 
-# last_name = name[6:]
 
-# funky_name = name[0::2]
+#------------ if else elif statements
 
-# reversed_name = name[::-1]
 
-# website = "https://google.com"
+# user_name = "mury.ash"
+# password = "1234"
+# age = int(input("Enter your age: "))
+# user_name_input = str(input("Enter your username: "))
+# password_input = str(input("Enter your password: "))
 
-# slice = slice(8,-4)
+# if age == 100:
+#     print("You are a centruy old!")
+# elif age >= 18:
+#     print("You are an adult!")
+# elif age < 0:
+#     print("You haven't been born yet!")
+# else:
+#     print("You are a minor!")
 
-# website = website[slice]
+# if user_name_input == user_name and password_input == password:
+#     print("Welcome!")
+# else:
+#     print("Wrong username or password!")
 
-# print(website)
+# if age == 30 or age == 40:
+#     print("You are either 30 or 40 years old!")
+
+# if age != 30 and age != 40:
+#     print("You are not either 30 or 40 years old!")
+# else:
+#     print("You are either 30 or 40 years old!")
