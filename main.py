@@ -108,4 +108,37 @@ import math
 # if age != 30 and age != 40:
 #     print("You are not either 30 or 40 years old!")
 # else:
-#     print("You are either 30 or 40 years old!")
+
+#     print("You are either 30 or 40 years old!") 
+
+#------------ while loops
+
+# while 1==1:
+#     print("Hello")
+    
+# count = 0
+
+# while True:
+#     count += 1
+#     if count == 10:
+#         print(count)
+#         break
+#     elif count == 5 or count == 7:
+#         continue
+#     else:
+#         print(count)
+#         pass
+
+# name = str(input("Enter your name: "))
+
+# while len(name.strip()) == 0:
+#     name = str(input("Enter your name: "))
+
+# print(name)
+
+# no_integer = str(input("Enter non integer character: "))
+
+# while no_integer.isnumeric():
+#     no_integer = str(input("Enter non integer character: "))
+
+# print(no_integer)
