@@ -1,4 +1,5 @@
 import math
+import time
 #------------ data types and variables
 
 # user_name = "John"
@@ -142,3 +143,28 @@ import math
 #     no_integer = str(input("Enter non integer character: "))
 
 # print(no_integer)
+
+#------------ for loops
+
+# for i in range(10):
+#     print(i)
+
+# for i in range(30, 50):
+#     print(i)
+
+# for i in range(50, 101, 2):
+#     print(i)
+    
+# for i in range(10, 0, -1):
+#     print(i)
+
+# user_name = "mury.ash"
+
+# for i in user_name:
+#     print(i)
+
+# for seconds in range(10, 0, -1):
+#     time.sleep(1)
+#     print(seconds)
+
+# print("Happy New Year!")
