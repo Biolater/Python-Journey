@@ -146,25 +146,70 @@ import time
 
 #------------ for loops
 
+# user_name = "mury.ash"
+
 # for i in range(10):
 #     print(i)
 
-# for i in range(30, 50):
-#     print(i)
-
-# for i in range(50, 101, 2):
+# for i in range(1,101):
 #     print(i)
     
-# for i in range(10, 0, -1):
-#     print(i)
-
-# user_name = "mury.ash"
-
 # for i in user_name:
 #     print(i)
 
-# for seconds in range(10, 0, -1):
-#     time.sleep(1)
-#     print(seconds)
+# for i in range(len(user_name)):
+#     print(user_name[i])
 
-# print("Happy New Year!")
+# for i in range(2,11,2):
+#     print(i)
+
+string = ""
+
+# for i in range(1,11):
+#     print(i)
+#     time.sleep(1)
+    
+# print("Done!")
+
+#------------ nested loops
+
+# rows = int(input("Enter number of rows: "))
+# columns = int(input("Enter number of columns: "))
+# symbol = input("Enter symbol: ")
+
+# for i in range(rows):
+#     for j in range(columns):
+#         print(symbol, end="")
+#     print()
+    
+    
+#------------ break, continue, pass
+
+# for i in range(1,11):
+#     if i == 5:
+#         break
+#     print(i)
+
+
+# name = str(input("Enter your name: "))
+
+# while True:
+#     if name == "mury.ash":
+#         break
+#     else :
+#         name = str(input("Enter your name: "))
+# print("Welcome!")
+
+
+# phone_number = "123-456-7890"
+
+# for i in phone_number:
+#     if i == "-":
+#         continue
+#     print(i, end="")
+
+# for i in range(1,11):
+#     if i % 2 != 0:
+#         pass
+#     else:
+#         print(i)
