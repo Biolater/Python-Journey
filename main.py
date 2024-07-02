@@ -185,31 +185,48 @@ string = ""
     
 #------------ break, continue, pass
 
-# for i in range(1,11):
-#     if i == 5:
+# for i in range(1, 11):
+#     if i == 5 or i == 7:
+#         continue
+#     print(i)
+
+# for i in range(1, 11):
+#     if i == 5 or i == 7:
+#         pass
+#     else :
+#         print(i)
+
+# for i in range(1, 11):
+#     if i == 5 or i == 7:
 #         break
 #     print(i)
 
 
-# name = str(input("Enter your name: "))
+#------------ lists
 
-# while True:
-#     if name == "mury.ash":
-#         break
-#     else :
-#         name = str(input("Enter your name: "))
-# print("Welcome!")
+foods = ["pizza", "burger", "hotdog", "fries", "salad"]
 
+# print(foods)
 
-# phone_number = "123-456-7890"
+# print(foods[0])
 
-# for i in phone_number:
-#     if i == "-":
-#         continue
-#     print(i, end="")
+# foods[0] = "pasta"
 
-# for i in range(1,11):
-#     if i % 2 != 0:
-#         pass
-#     else:
-#         print(i)
+# print(foods)
+
+# print(foods[::-1])
+
+# for food in foods:
+#     print(food)
+
+# for i, food in enumerate(foods):
+#     print(i, food)
+
+# foods.append("ice cream")
+# foods.reverse()
+# foods.remove("fries")
+# foods.pop()
+# foods.insert(0, "milk")
+# foods.sort()
+# foods.clear()
+# print(foods)
