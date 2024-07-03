@@ -15,7 +15,7 @@ import time
 
 #------------ string methods
 
-# print(city.capitalize()) 
+# print(city.capitalize())
 # print(city.casefold())
 # print(city.center(60, "*"))
 # print(city.count("i"))
@@ -110,13 +110,13 @@ import time
 #     print("You are not either 30 or 40 years old!")
 # else:
 
-#     print("You are either 30 or 40 years old!") 
+#     print("You are either 30 or 40 years old!")
 
 #------------ while loops
 
 # while 1==1:
 #     print("Hello")
-    
+
 # count = 0
 
 # while True:
@@ -153,7 +153,7 @@ import time
 
 # for i in range(1,101):
 #     print(i)
-    
+
 # for i in user_name:
 #     print(i)
 
@@ -168,7 +168,7 @@ string = ""
 # for i in range(1,11):
 #     print(i)
 #     time.sleep(1)
-    
+
 # print("Done!")
 
 #------------ nested loops
@@ -181,8 +181,8 @@ string = ""
 #     for j in range(columns):
 #         print(symbol, end="")
 #     print()
-    
-    
+
+
 #------------ break, continue, pass
 
 # for i in range(1, 11):
@@ -204,29 +204,34 @@ string = ""
 
 #------------ lists
 
-foods = ["pizza", "burger", "hotdog", "fries", "salad"]
+# names = ["Murad", "Gunay", "Nadir", "Huseyn", "Simran"]
 
-# print(foods)
+# names[0] = "Amin"
+# names[:2] = ["Ali", "Veli"]
+# names.append("Amin")
+# names.insert(0, "Amin")
+# names.remove("Murad")
+# names.pop(1)
+# del names[0:2]
+# names.clear()
+# for name in names:
+#     print(name)
 
-# print(foods[0])
 
-# foods[0] = "pasta"
+#------------ 2D lists
 
-# print(foods)
+# drinks = ["coffee", "soda", "tea"]
+# dinner = ["pizza", "hamburger", "hotdog"]
+# dessert = ["cake", "ice cream"]
 
-# print(foods[::-1])
+# foods = [drinks, dinner, dessert]
 
 # for food in foods:
-#     print(food)
+#     food_arr = []
+#     for food_item in food:
+#         food_arr.append(food_item)
+#     print(food_arr)
 
 # for i, food in enumerate(foods):
-#     print(i, food)
+#     print(f"index: {i}, value: {food}")
 
-# foods.append("ice cream")
-# foods.reverse()
-# foods.remove("fries")
-# foods.pop()
-# foods.insert(0, "milk")
-# foods.sort()
-# foods.clear()
-# print(foods)
