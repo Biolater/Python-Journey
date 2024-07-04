@@ -163,7 +163,7 @@ import time
 # for i in range(2,11,2):
 #     print(i)
 
-string = ""
+# string = ""
 
 # for i in range(1,11):
 #     print(i)
@@ -206,6 +206,12 @@ string = ""
 
 # names = ["Murad", "Gunay", "Nadir", "Huseyn", "Simran"]
 
+# name1, name2, *rest = names
+
+# print(rest)
+
+# numbers = [i for i in range(100)]
+
 # names[0] = "Amin"
 # names[:2] = ["Ali", "Veli"]
 # names.append("Amin")
@@ -216,7 +222,6 @@ string = ""
 # names.clear()
 # for name in names:
 #     print(name)
-
 
 #------------ 2D lists
 
@@ -235,3 +240,33 @@ string = ""
 # for i, food in enumerate(foods):
 #     print(f"index: {i}, value: {food}")
 
+#------------ tuples
+
+# student = ("Murad", 17, "Fullstack")
+# numbers = tuple(i for i in range(1,11))
+    # colors = ("green", "blue", "white")
+
+    # (color_1, color_2, color_3) = colors
+
+    # print(color_1, color_2, color_3)
+# print(student)
+# print(student.count("Murad"))
+# print(student.index(17))
+# print(len(student))
+
+# for number in numbers:
+#     print(number)
+
+# for x in student:
+#     print(x)
+
+# if "Murad" in student:
+#     print("Murad is here!")
+
+# fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+
+# (green, yellow, *red) = fruits
+
+# print(green)
+# print(yellow)
+# print(red)
