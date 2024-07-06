@@ -242,31 +242,37 @@ import time
 
 #------------ tuples
 
-# student = ("Murad", 17, "Fullstack")
-# numbers = tuple(i for i in range(1,11))
-    # colors = ("green", "blue", "white")
+# car = ("bmw", 2019, "red", 2000)
 
-    # (color_1, color_2, color_3) = colors
+# print(car)
+# print(car[::-1])
+# print(car[0:3])
+# car[0] = "audi"
 
-    # print(color_1, color_2, color_3)
-# print(student)
-# print(student.count("Murad"))
-# print(student.index(17))
-# print(len(student))
+# (brand, year, color, price) = car
 
-# for number in numbers:
-#     print(number)
+# print(brand, year, color, price)
 
-# for x in student:
-#     print(x)
+#------------ sets
 
-# if "Murad" in student:
-#     print("Murad is here!")
+# names = {"Murad", "Gunay", "Nadir", "Huseyn", "Simran", "Murad"}
 
-# fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+# surnames = {"Huseynova", "Simranova", "Nadirova", "Gunayova", "Muradova"}
 
-# (green, yellow, *red) = fruits
+# print(names.union(surnames))
 
-# print(green)
-# print(yellow)
-# print(red)
+# names.update(surnames)
+
+# # names.add("Amin")
+
+# names.remove("Murad")
+
+# names.pop()
+
+# names.clear()
+
+# print(len(names))
+
+
+# for name in names:
+#     print(name)
