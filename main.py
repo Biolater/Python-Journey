@@ -1,5 +1,7 @@
 import math
 import time
+from typing import Union
+
 #------------ data types and variables
 
 # user_name = "John"
@@ -256,23 +258,60 @@ import time
 #------------ sets
 
 # names = {"Murad", "Gunay", "Nadir", "Huseyn", "Simran", "Murad"}
+# additional_names = {"Rafiq", "Amin", "Rufet", "Murad", "Amin"}
+# all_names = names.union(additional_names)
+# all_names_2 = names | additional_names # only sets
+# in_both = names.intersection(additional_names)
+# in_both_2 = names & additional_names # only sets
+# numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 
-# surnames = {"Huseynova", "Simranova", "Nadirova", "Gunayova", "Muradova"}
+# a = [1,2,3,4,1]
 
-# print(names.union(surnames))
+# print(set(a))
 
-# names.update(surnames)
-
-# # names.add("Amin")
-
-# names.remove("Murad")
-
+# names.add("Esmail")
+# names.update(additional_names)
+# names.update(numbers)
+# names.remove("Huseyn")
+# names.discard("Murad")
 # names.pop()
-
 # names.clear()
+# del names
 
-# print(len(names))
 
+# print(names)
+# print(in_both_2)
 
 # for name in names:
 #     print(name)
+    
+# print("Murad" in names)
+# print ("Abbas" in names)
+# print ("Muradik" not in names)
+
+
+#------------ dictionaries
+
+user_info: dict[str, Union[str, int]] = {
+    "name": "Murad",
+    "age": 25,
+    "address": "Baku, Azerbaijan"
+}
+
+# print(user_info)
+# print(user_info["name"])
+# print(user_info["age"])
+# print(user_info["address"])
+# user_info.update({"name": "Abbas"})
+# user_info.update({"street": "Baku"})
+# user_info.popitem()
+# user_info.pop("age")
+# for x in user_info:
+#     print(x, user_info[x])
+# print(user_info.get("name"))
+# print(user_info.get("siblings"))
+# print(user_info.get("siblings", [])) # give default value if u get none
+# print(user_info.keys())
+# print(user_info.values())
+# for key, value in user_info.items():
+#     print(key, value)
