@@ -292,26 +292,47 @@ from typing import Union
 
 #------------ dictionaries
 
-user_info: dict[str, Union[str, int]] = {
-    "name": "Murad",
-    "age": 25,
-    "address": "Baku, Azerbaijan"
-}
+# car = {
+#     "brand": "bmw",
+#     "year": 2019,
+#     "colors": ["red", "blue", "black", "white"],
+#     "price": 2000
+# }
 
-# print(user_info)
-# print(user_info["name"])
-# print(user_info["age"])
-# print(user_info["address"])
-# user_info.update({"name": "Abbas"})
-# user_info.update({"street": "Baku"})
-# user_info.popitem()
-# user_info.pop("age")
-# for x in user_info:
-#     print(x, user_info[x])
-# print(user_info.get("name"))
-# print(user_info.get("siblings"))
-# print(user_info.get("siblings", [])) # give default value if u get none
-# print(user_info.keys())
-# print(user_info.values())
-# for key, value in user_info.items():
+# car["year"] = 2020
+# car.update({"year": 2020})
+# car.update({"length": 4.5})
+
+# car.pop("year")
+# car.popitem()
+# car.clear()
+# del car["brand"]
+
+
+# print(car)
+# print(car["brand"])
+# print(car.get("price"))
+# print(car.get("aaaa"))
+# print(car.keys())
+# print(car.values())
+# print(len(car))
+# print(type(car))
+# for key, value in car.items():
 #     print(key, value)
+# for key in car:
+#     print(key, car[key])
+
+
+#------------ indexing
+
+# name = "murad yusubov"
+
+# if(name.index("m") == 0):
+#     print(True)
+# else:
+#     print(False)
+
+# first_name = name[:5]
+# last_name = name[6:]
+
+# print(f"Hi {first_name.capitalize()} {last_name.capitalize()}")
