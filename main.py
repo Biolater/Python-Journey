@@ -336,3 +336,18 @@ from typing import Union
 # last_name = name[6:]
 
 # print(f"Hi {first_name.capitalize()} {last_name.capitalize()}")
+
+#------------ functions
+
+# def give_hello(name: str, age: int) -> str:
+#     return f"Hi {name.capitalize()}, your age is {age}"
+    
+    
+# print(give_hello("Murad", 17))
+
+# def sum_numbers(n1: int, n2:int) -> int:
+#     return n1 + n2
+
+
+# print(12 + sum_numbers(7,6))
+
