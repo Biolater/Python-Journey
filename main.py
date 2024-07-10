@@ -339,15 +339,40 @@ from typing import Union
 
 #------------ functions
 
-# def give_hello(name: str, age: int) -> str:
-#     return f"Hi {name.capitalize()}, your age is {age}"
+# def add(a: int, b: int) -> int:
+#     return a + b
+
+# def subtract(a: int, b: int) -> int:
+#     return a - b
+
+# def multiply(a: int, b: int) -> int:
+#     return a * b
+
+# def divide(a: int, b: int) -> int:
+#     return a / b
+
+
+# print(add(10, 20))
+# print(subtract(10, 20))
+# print(multiply(10, 20))
+# print(divide(10, 20))
+
+#------------ kwargs
+
+# def hello(**kwargs):
+#     for key, value in kwargs.items():
+#         print(f"{key} : {value}")
     
-    
-# print(give_hello("Murad", 17))
+# hello(name="murad", surname="yusubov", age=17)
 
-# def sum_numbers(n1: int, n2:int) -> int:
-#     return n1 + n2
+#------------ variable scopes
+
+# name = "S" # global variable
+
+# def display_name(name: str) -> str:
+#     given_name = name # local variable
+#     print(f"Hello, {given_name}")
 
 
-# print(12 + sum_numbers(7,6))
-
+# print(name)
+# display_name("murad")
