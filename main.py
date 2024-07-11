@@ -1,6 +1,7 @@
 import math
 import time
 from typing import Union
+import random
 
 #------------ data types and variables
 
@@ -359,11 +360,14 @@ from typing import Union
 
 #------------ kwargs
 
-# def hello(**kwargs):
-#     for key, value in kwargs.items():
-#         print(f"{key} : {value}")
-    
-# hello(name="murad", surname="yusubov", age=17)
+# def sum_numbers(**kwargs):
+#     total = 0
+#     for number in kwargs.values():
+#         total += number
+#     return total
+
+# print(sum_numbers(n1=1, n2=2, n3=3))
+
 
 #------------ variable scopes
 
@@ -376,3 +380,38 @@ from typing import Union
 
 # print(name)
 # display_name("murad")
+
+#------------ args
+
+# def sum_numbers(*args):
+#     print(sum(args))
+    
+
+# sum_numbers(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+#------------ string format
+
+# def hello_animal(animal: str, item: str) -> str:
+#     str = f"Hello {animal}! You have {item}"
+#     print(str)
+    
+
+# hello_animal("cat", "cat food")
+
+#------------ random numbers
+
+# random_int = random.randint(1,100)
+# random_float = random.random()
+# random_list = ["murad", "yusubov", "abdurahman", "murad", "yusubov"]
+# random_list_item = random.choice(random_list)
+# cards = ["spades", "hearts", "diamonds", "clubs"]
+
+
+# print(random_int)
+
+# while random_int != 100:
+#     random_int = random.randint(1,100)
+#     print(random_int)
+# else : 
+#     print("Done!")
+
