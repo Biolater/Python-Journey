@@ -406,6 +406,3 @@ import random
 #     print("something went wrong")
 # else: 
 #     print(result)
-
-
-
