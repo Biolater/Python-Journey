@@ -258,71 +258,52 @@ import random
 
 #------------ sets
 
-# names = {"Murad", "Gunay", "Nadir", "Huseyn", "Simran", "Murad"}
-# additional_names = {"Rafiq", "Amin", "Rufet", "Murad", "Amin"}
-# all_names = names.union(additional_names)
-# all_names_2 = names | additional_names # only sets
-# in_both = names.intersection(additional_names)
-# in_both_2 = names & additional_names # only sets
-# numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+# sports = {"Football","MMA","Swimming","Golf","Chess","Boxing","Chess"}
 
-# a = [1,2,3,4,1]
+# extra_sports = {"Basketball","Rugby","Cricket"}
 
-# print(set(a))
+# sports.add("Bowling")
+# sports.update(extra_sports)
+# sports.union(extra_sports)
+# joined_sets = sports | extra_sports
 
-# names.add("Esmail")
-# names.update(additional_names)
-# names.update(numbers)
-# names.remove("Huseyn")
-# names.discard("Murad")
-# names.pop()
-# names.clear()
-# del names
-
-
-# print(names)
-# print(in_both_2)
-
-# for name in names:
-#     print(name)
-    
-# print("Murad" in names)
-# print ("Abbas" in names)
-# print ("Muradik" not in names)
+# print(sports)
+# print(joined_sets)
+# print(sports.intersection(extra_sports))
+# for x in sports:
+#     print(x, end=" ")
 
 
 #------------ dictionaries
 
-# car = {
-#     "brand": "bmw",
-#     "year": 2019,
-#     "colors": ["red", "blue", "black", "white"],
-#     "price": 2000
+# user_details = {
+#     "username": "mury.ash",
+#     "age": 25,
+#     "country": "Azerbaijan",
+#     "hobbies": ["coding","reading","movie watching"]
 # }
 
-# car["year"] = 2020
-# car.update({"year": 2020})
-# car.update({"length": 4.5})
+# extra_user_details = {
+#     "school": "244 number middle school",
+#     "has_brothers": False,
+#     "has_sisters": False,
+#     "has_girlfriend": True
+# }
 
-# car.pop("year")
-# car.popitem()
-# car.clear()
-# del car["brand"]
+# user_details.update(extra_user_details)
+# user_details.pop("age")
+# user_details.clear()
+# user_details.popitem()
 
-
-# print(car)
-# print(car["brand"])
-# print(car.get("price"))
-# print(car.get("aaaa"))
-# print(car.keys())
-# print(car.values())
-# print(len(car))
-# print(type(car))
-# for key, value in car.items():
-#     print(key, value)
-# for key in car:
-#     print(key, car[key])
-
+# print(user_details)
+# print(user_details["age"])
+# print(user_details["SSS"])
+# print(user_details.get("age"))
+# print(user_details.get("s"))
+# print(user_details.keys())
+# print(user_details.values())
+# for key, value in user_details.items():
+#     print(f"key: {key}, value: {value}")
 
 #------------ indexing
 
@@ -400,18 +381,31 @@ import random
 
 #------------ random numbers
 
-# random_int = random.randint(1,100)
+# random_int = random.randint(1,50)
 # random_float = random.random()
-# random_list = ["murad", "yusubov", "abdurahman", "murad", "yusubov"]
-# random_list_item = random.choice(random_list)
-# cards = ["spades", "hearts", "diamonds", "clubs"]
-
+# list_items = ["a","b","c","d","e"]
+# random.shuffle(list_items)
 
 # print(random_int)
+# print(random_float)
+# print(random.choice(list_items))
+# print(list_items)
 
-# while random_int != 100:
-#     random_int = random.randint(1,100)
-#     print(random_int)
-# else : 
-#     print("Done!")
+
+#------------ exception handling
+
+# try:
+#     numerator = int(input("Enter a number to divide:"))
+#     denominator = int(input("Enter a number to divide by:"))
+#     result = numerator / denominator    
+# except ZeroDivisionError:
+#     print("Can't divide by zero")
+# except ValueError:
+#     print("You can only enter a numeric value")
+# except Exception:
+#     print("something went wrong")
+# else: 
+#     print(result)
+
+
 
