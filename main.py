@@ -2,6 +2,7 @@ import math
 import time
 from typing import Union
 import random
+import os
 
 #------------ data types and variables
 
@@ -395,14 +396,40 @@ import random
 #------------ exception handling
 
 # try:
-#     numerator = int(input("Enter a number to divide:"))
-#     denominator = int(input("Enter a number to divide by:"))
-#     result = numerator / denominator    
-# except ZeroDivisionError:
-#     print("Can't divide by zero")
+#     user_name = str(input("Enter your name: "))
+#     age = int(input("Enter your age: "))
+#     if(user_name.isnumeric()):
+#         raise ValueError
+#     elif (len(user_name.strip()) == 0):
+#         raise ValueError
+#     elif (age < 0):
+#         raise ValueError
+#     else:
+#         print(f"Hello {user_name}")
 # except ValueError:
-#     print("You can only enter a numeric value")
+#     print("Invalid input!")
 # except Exception:
-#     print("something went wrong")
-# else: 
-#     print(result)
+#     print("Something went wrong!")
+
+
+#------------ file detection
+
+# path = "C:\\Users\\yusif\\OneDrive\\Masaüstü\\New Folder"
+
+# if os.path.exists(path) and os.path.isfile(path):
+#     print("This path exists and it is a file")
+# elif os.path.exists(path) and os.path.isdir(path):
+#     print("This path exists and it is a directory")
+# else:
+#     print("This path does not exist")
+    
+#------------ file reading
+
+# with open("C:\\Users\\yusif\\OneDrive\\Masaüstü\\New Text Document.txt") as file:
+#     print (file.read())
+    
+# try:
+#     with open("a.txt") as text_file:
+#         print(text_file.read())
+# except FileNotFoundError:
+#     print("File not found!")
