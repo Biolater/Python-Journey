@@ -414,22 +414,31 @@ import os
 
 #------------ file detection
 
-# path = "C:\\Users\\yusif\\OneDrive\\Masaüstü\\New Folder"
+file_path = "C:\\Users\\yusif\\OneDrive\\Masaüstü\\pycharm"
 
-# if os.path.exists(path) and os.path.isfile(path):
-#     print("This path exists and it is a file")
-# elif os.path.exists(path) and os.path.isdir(path):
-#     print("This path exists and it is a directory")
+# if os.path.exists(file_path):
+#     print("File exists!")
 # else:
-#     print("This path does not exist")
+#     print("File does not exist!")
+
+# if os.path.isdir(file_path):
+#     print("Directory exists!")
+# else:
+#     print("Directory does not exist!")
+
+# if os.path.isfile(file_path):
+#     print("File exists!")
+# else:
+#     print("File does not exist!")
+
     
 #------------ file reading
 
-# with open("C:\\Users\\yusif\\OneDrive\\Masaüstü\\New Text Document.txt") as file:
-#     print (file.read())
+# with open("a.txt") as text_file:
+#     print(text_file.read())
+
+#------------ file writing
+
+# with open("a.txt", "a") as text_file:
+#     text_file.write("\nmurad yusubov")
     
-# try:
-#     with open("a.txt") as text_file:
-#         print(text_file.read())
-# except FileNotFoundError:
-#     print("File not found!")
