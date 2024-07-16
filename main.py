@@ -3,7 +3,7 @@ import time
 from typing import Union
 import random
 import os
-
+import shutil
 #------------ data types and variables
 
 # user_name = "John"
@@ -382,63 +382,88 @@ import os
 
 #------------ random numbers
 
-# random_int = random.randint(1,50)
+# random_number = random.randint(1,100)
 # random_float = random.random()
-# list_items = ["a","b","c","d","e"]
-# random.shuffle(list_items)
-
-# print(random_int)
-# print(random_float)
-# print(random.choice(list_items))
-# print(list_items)
+# colors = ["green", "blue", "red"]
+# random_color = random.choice(colors)
+# random.shuffle(colors)
+# colors_2 = random.sample(colors, 2)
 
 
 #------------ exception handling
 
 # try:
-#     user_name = str(input("Enter your name: "))
-#     age = int(input("Enter your age: "))
-#     if(user_name.isnumeric()):
-#         raise ValueError
-#     elif (len(user_name.strip()) == 0):
-#         raise ValueError
-#     elif (age < 0):
-#         raise ValueError
-#     else:
-#         print(f"Hello {user_name}")
+#     numerator = int(input("Enter a value to divide:"))
+#     divider = int(input("Enter a value to divide by:"))
+#     result = numerator / divider
+#     print(result)
+# except ZeroDivisionError:
+#     print("You can't divide by zero!")
 # except ValueError:
-#     print("Invalid input!")
+#     print("You didn't enter a number!")
 # except Exception:
-#     print("Something went wrong!")
-
+#     print("Something went wrong...")
 
 #------------ file detection
 
-file_path = "C:\\Users\\yusif\\OneDrive\\Masaüstü\\pycharm"
+# path = "C:\\Users\\yusif\\OneDrive\\Masaüstü\\pycharm"
 
-# if os.path.exists(file_path):
-#     print("File exists!")
+# if os.path.exists(path) and os.path.isfile(path):
+#     print("That is a file and it exists")
 # else:
-#     print("File does not exist!")
+#     print("That is not a file or it doesn't exist")
 
-# if os.path.isdir(file_path):
-#     print("Directory exists!")
+# if os.path.exists(path) and os.path.isdir(path):
+#     print("That is a directory and it exists")
 # else:
-#     print("Directory does not exist!")
-
-# if os.path.isfile(file_path):
-#     print("File exists!")
-# else:
-#     print("File does not exist!")
-
+#     print("That is not a directory or it doesn't exist")
     
 #------------ file reading
 
-# with open("a.txt") as text_file:
-#     print(text_file.read())
+# with open("a.txt","r") as text_file:
+#     file = text_file.read()
+#     print(file)
 
 #------------ file writing
 
-# with open("a.txt", "a") as text_file:
-#     text_file.write("\nmurad yusubov")
+# with open("a.txt","w") as text_file:
+#     text_file.write("New text")
+
+# with open("a.txt","a") as text_file:
+#     text_file.write("\nESMA + MURAD = FOREVER")
     
+
+#------------ copy a file
+
+# shutil.copyfile("a.txt", "new.txt")
+# shutil.copy("a.txt", "new.txt")
+
+#------------ move a file
+
+# source = "C:\\Users\\yusif\\OneDrive\\Masaüstü\\a.txt"
+# destination = "C:\\Users\\yusif\\OneDrive\\Masaüstü\\pycharm\\Python-Journey\\a.txt"
+
+# try:
+#     if(os.path.exists(destination)):
+#         print("There is already a file there")
+#     else:
+#         shutil.move(source, destination)
+# except FileNotFoundError:
+#     print("File not found")
+# except PermissionError:
+#     print("You don't have permission to move that")
+# except Exception:
+#     print("Something went wrong...")
+
+
+#------------ delete a file 
+
+# try:
+#     os.remove("new.txt")
+#     print("File deleted")
+# except FileNotFoundError:
+#     print("File not found")
+# except PermissionError:
+#     print("You don't have permission to delete that")
+# except Exception:
+#     print("Something went wrong...")
