@@ -459,11 +459,12 @@ import shutil
 #------------ delete a file 
 
 # try:
-#     os.remove("new.txt")
-#     print("File deleted")
+#     os.remove("a.txt")
 # except FileNotFoundError:
 #     print("File not found")
 # except PermissionError:
 #     print("You don't have permission to delete that")
 # except Exception:
 #     print("Something went wrong...")
+# else:
+#     print("File was deleted successfully!")
