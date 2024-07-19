@@ -23,29 +23,27 @@ questions = [
 
 def start_game(questions):
     score = 0
-    for question in questions:
-        print("----------------------------------")
-        print(question["question"])
-        print ("Options:", question["options"])
+    for i, question in enumerate(questions):
+        print(f"\n\nQuestion {i+1}: {question["question"]}")
+        print(f"Options: {question["options"]}")
         user_answer = input("Enter your answer: ")
+        while user_answer not in question["options"]:
+            user_answer = input("Invalid answer. Please enter a valid option: ")
         if user_answer == question["answer"]:
-            score += 1
+            score+=1
             print("Correct!")
         else:
-            print("Wrong!")
-        print("Score:", score)
-
-    print("Game over. You scored", score, "out of", len(questions))
-    
-    
+            print(f"Incorrect! The correct answer is: {question["answer"]}")
+    print(f"Score: {score}")        
 
 def play_again():
-    play_again = input("Would you like to play again? (yes/no): ")
-    if play_again.lower() == "yes":
-        return True
-    else:
+    play_again = str(input("Do you want to play again? (yes/no): ")).lower()
+    if play_again != "yes":
         print("Thanks for playing!")
         return False
+    else:
+        print("Let's play again!")
+        return True
 
 start_game(questions)
 

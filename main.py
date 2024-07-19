@@ -468,3 +468,47 @@ import shutil
 #     print("Something went wrong...")
 # else:
 #     print("File was deleted successfully!")
+
+
+
+#------------ classes
+
+# class Car:
+#     def __init__(self, make, model, year, color):
+#         self.make = make
+#         self.model = model
+#         self.year = year
+#         self.color = color
+    
+#     def drive(self):
+#         print("The car is being driven")
+    
+#     def stop(self):
+#         print("The car is being stopped")
+class Person:
+    def __init__(self, name, age, gender, height, weight) -> None:
+        self.name = name
+        self.age = age
+        self.gender = gender
+        self.height = height
+        self.weight = weight
+    
+    def greet(self):
+        print(f"Hello, my name is {self.name}")
+    
+    def eat(self):
+        print("I am eating")
+    
+    def sleep(self):
+        print("I am sleeping")
+    
+
+# car_1 = Car("BMW", "X5", 2022, "blue")
+person_1 = Person("yusif", 25, "male", 180, 70)
+
+# car_1.drive()
+# car_1.stop()
+# car_1.color = "red"
+# print(car_1.color)
+# print(car_1.make)
+person_1.greet()
