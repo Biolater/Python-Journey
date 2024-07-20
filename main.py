@@ -474,41 +474,58 @@ import shutil
 #------------ classes
 
 # class Car:
-#     def __init__(self, make, model, year, color):
-#         self.make = make
-#         self.model = model
-#         self.year = year
+#     def __init__(self, name, color, year):
+#         self.name = name
 #         self.color = color
+#         self.year = year
     
 #     def drive(self):
-#         print("The car is being driven")
-    
+#         print(f"{self.name} is driving")
+        
 #     def stop(self):
-#         print("The car is being stopped")
-class Person:
-    def __init__(self, name, age, gender, height, weight) -> None:
+#         print(f"{self.name} is stopping")
+
+# car = Car("bmw", "red", 2019)
+
+# print(car.name)
+# print(car.color)
+# print(car.year)
+# car.drive()
+# car.stop()
+
+
+#------------ class inheritance
+
+
+class Animal:
+    alive = True
+
+    def __init__(self, name) -> None:
         self.name = name
-        self.age = age
-        self.gender = gender
-        self.height = height
-        self.weight = weight
-    
-    def greet(self):
-        print(f"Hello, my name is {self.name}")
-    
+
     def eat(self):
-        print("I am eating")
-    
+        print(f"{self.name} is eating")
+
     def sleep(self):
-        print("I am sleeping")
-    
+        print(f"{self.name} is sleeping")
 
-# car_1 = Car("BMW", "X5", 2022, "blue")
-person_1 = Person("yusif", 25, "male", 180, 70)
 
-# car_1.drive()
-# car_1.stop()
-# car_1.color = "red"
-# print(car_1.color)
-# print(car_1.make)
-person_1.greet()
+class Rabbit(Animal):
+    def __init__(self):
+        super().__init__("Rabbit")
+
+class Fish(Animal):
+    def __init__(self):
+        super().__init__("Fish")
+
+class Hawk(Animal):
+    def __init__(self):
+        super().__init__("Hawk")
+
+
+rabbit = Rabbit()
+fish = Fish()
+hawk = Hawk()
+
+# print(rabbit.alive)
+rabbit.eat()  # Corrected this line to not call print on the method directly
