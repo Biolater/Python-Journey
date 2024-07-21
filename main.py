@@ -496,36 +496,49 @@ import shutil
 
 #------------ class inheritance
 
+# class Human:
+#     alive = True
+    
+#     def walk(self):
+#         print("walking")
+        
+#     def sleep(self):
+#         print("sleeping")
+        
 
-class Animal:
-    alive = True
-
-    def __init__(self, name) -> None:
-        self.name = name
-
-    def eat(self):
-        print(f"{self.name} is eating")
-
-    def sleep(self):
-        print(f"{self.name} is sleeping")
-
-
-class Rabbit(Animal):
-    def __init__(self):
-        super().__init__("Rabbit")
-
-class Fish(Animal):
-    def __init__(self):
-        super().__init__("Fish")
-
-class Hawk(Animal):
-    def __init__(self):
-        super().__init__("Hawk")
+# class Murad(Human):
+#     pass
 
 
-rabbit = Rabbit()
-fish = Fish()
-hawk = Hawk()
+# class Esma(Human):
+#     pass
 
-# print(rabbit.alive)
-rabbit.eat()  # Corrected this line to not call print on the method directly
+    
+
+# murad = Murad()
+# esma = Esma()
+
+# print(murad.alive)
+# print(esma.alive)
+
+
+#------------ multilevel inheritance
+
+# class Organism:
+#     alive = True
+    
+
+# class Animal(Organism):
+#     def eat(self):
+#         print("eating")
+        
+# class Dog(Animal):
+#     def bark(self):
+#         print("barking")
+
+
+# animal = Animal()
+# dog = Dog()
+
+# print(animal.alive)
+# print(dog.alive)
