@@ -542,3 +542,43 @@ import shutil
 
 # print(animal.alive)
 # print(dog.alive)
+
+
+#------------ multiple inheritance
+
+# class Prey:
+#     def flee(self):
+#         print("This animal flees")
+        
+# class Hunt:
+#     def hunt(self):
+#         print("This animal hunts")
+        
+        
+# class Fish(Prey, Hunt):
+#     def swim(self):
+#         print("This animal swims")
+    
+    
+# fish = Fish()
+
+# fish.flee()
+# fish.hunt()
+# fish.swim()
+
+
+#------------ method overriding
+
+# class Animal:
+#     def eat(self):
+#         print("This animal eats")
+
+
+# class Rabbit(Animal):
+#     def eat(self):
+#         print("This rabbit eats carrot")
+        
+
+# rabbit = Rabbit()
+
+# rabbit.eat()
