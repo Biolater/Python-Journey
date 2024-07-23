@@ -582,3 +582,36 @@ import shutil
 # rabbit = Rabbit()
 
 # rabbit.eat()
+
+
+#------------ method chaining
+
+
+class Animal:
+    def eat(self, food):
+        print(f"This animal eats {food}")
+        return self
+        
+    def sleep(self):
+        print("This animal sleeps")
+        return self
+        
+        
+    def walk(self):
+        print("This animal walks")
+        return self
+        
+        
+    def run(self):
+        print("This animal runs")
+        return self
+        
+        
+
+
+animal = Animal()
+
+print(animal.walk()
+      .run()
+      .eat("Carrot")
+      .sleep())
