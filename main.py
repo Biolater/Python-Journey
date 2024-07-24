@@ -560,7 +560,7 @@ import shutil
 #         print("This animal swims")
     
     
-# fish = Fish()
+# fish = Fish() 
 
 # fish.flee()
 # fish.hunt()
@@ -570,48 +570,63 @@ import shutil
 #------------ method overriding
 
 # class Animal:
-#     def eat(self):
-#         print("This animal eats")
-
+#     def eat(self, food):
+#         print(f"This animal eats {food}")
+#         return self
+        
+#     def sleep(self):
+#         print("This animal sleeps")
+#         return self
+    
 
 # class Rabbit(Animal):
-#     def eat(self):
-#         print("This rabbit eats carrot")
+#     def eat(self, food):
+#         print(f"This rabbit eats {food}")
+#         return self
         
+
 
 # rabbit = Rabbit()
 
-# rabbit.eat()
+# rabbit.eat("Carrot").sleep()
 
 
 #------------ method chaining
 
+# class Animal: 
+#     def eat(self, food):
+#         print(f"This animal eats {food}")
+#         return self
+        
+#     def sleep(self):
+#         print("This animal sleeps")
+#         return self
+    
+    
+# class Rabbit(Animal):
+#     def run(self):
+#         print("This rabbit runs")
+#         return self
+    
 
-class Animal:
-    def eat(self, food):
-        print(f"This animal eats {food}")
-        return self
+# rabbit = Rabbit()
+# rabbit.eat("Carrot").run().sleep()
         
-    def sleep(self):
-        print("This animal sleeps")
-        return self
-        
-        
-    def walk(self):
-        print("This animal walks")
-        return self
-        
-        
-    def run(self):
-        print("This animal runs")
-        return self
-        
-        
+    
 
+#------------ super function
 
-animal = Animal()
+# class Animal:
+#     def __init__(self, food) -> None:
+#         self.food = food
+        
+#     def eat(self):
+#         print(f"This animal eats {self.food}")
+    
+# class Rabbit(Animal):
+#     def __init__(self):
+#         super().__init__("Carrot")
+        
+# rabbit = Rabbit()
 
-print(animal.walk()
-      .run()
-      .eat("Carrot")
-      .sleep())
+# rabbit.eat()
