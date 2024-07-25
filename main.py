@@ -548,71 +548,78 @@ import shutil
 
 # class Prey:
 #     def flee(self):
-#         print("This animal flees")
+#         print("fleeing")
         
-# class Hunt:
+
+# class Predator:
 #     def hunt(self):
-#         print("This animal hunts")
+#         print("hunting")
         
-        
-# class Fish(Prey, Hunt):
-#     def swim(self):
-#         print("This animal swims")
-    
-    
-# fish = Fish() 
+
+# class Fish(Prey, Predator):
+#     pass
+
+# fish = Fish()
 
 # fish.flee()
 # fish.hunt()
-# fish.swim()
 
 
 #------------ method overriding
 
-# class Animal:
-#     def eat(self, food):
-#         print(f"This animal eats {food}")
-#         return self
+# class Person:
+#     def __init__(self, name) -> None:
+#         self.name = name
         
-#     def sleep(self):
-#         print("This animal sleeps")
-#         return self
-    
-
-# class Rabbit(Animal):
-#     def eat(self, food):
-#         print(f"This rabbit eats {food}")
-#         return self
+#     def talk(self):
+#         print(f"Hi, I am {self.name}")
         
 
+# class Student(Person):
+#     def __init__(self, name, student_id) -> None:
+#         super().__init__(name)
+#         self.student_id = student_id
+        
+#     def talk(self):
+#         print(f"Hi, I am {self.name} and my student id is {self.student_id}")
+        
 
-# rabbit = Rabbit()
 
-# rabbit.eat("Carrot").sleep()
+# murad = Student("Murad", 123)
+# person = Person("Yusif")
+
+# murad.talk()
+# person.talk()
 
 
 #------------ method chaining
 
-# class Animal: 
-#     def eat(self, food):
-#         print(f"This animal eats {food}")
+# class Calculator:
+#     def __init__(self, n1, n2) -> None:
+#         self.n1 = n1
+#         self.n2 = n2
+        
+#     def add(self):
+#         print(self.n1 + self.n2)
+#         return self
+    
+#     def subtract(self):
+#         print(self.n1 - self.n2)
+#         return self
+    
+#     def multiply(self):
+#         print(self.n1 * self.n2)
+#         return self
+    
+#     def divide(self):
+#         print(self.n1 / self.n2)
 #         return self
         
-#     def sleep(self):
-#         print("This animal sleeps")
-#         return self
-    
-    
-# class Rabbit(Animal):
-#     def run(self):
-#         print("This rabbit runs")
-#         return self
-    
 
-# rabbit = Rabbit()
-# rabbit.eat("Carrot").run().sleep()
-        
+# calculator = Calculator(10, 5)
     
+# calculator.add().subtract().multiply().divide()
+
 
 #------------ super function
 
@@ -622,11 +629,65 @@ import shutil
         
 #     def eat(self):
 #         print(f"This animal eats {self.food}")
-    
-# class Rabbit(Animal):
-#     def __init__(self):
-#         super().__init__("Carrot")
         
-# rabbit = Rabbit()
 
+
+# class Rabbit(Animal):
+#     def __init__(self, food) -> None:
+#         super().__init__(food)
+        
+        
+# rabbit = Rabbit("Carrot")
 # rabbit.eat()
+
+# class Person:
+#     def __init__(self, name, age, gender) -> None:
+#         self.name = name
+#         self.age = age
+#         self.gender = gender
+    
+#     def introduce(self):
+#         print(f"Hi, my name is {self.name}")
+#         print(f"I am {self.age} years old")
+#         print(f"I am a {self.gender}")
+        
+
+# class Murad(Person):
+#     def __init__(self, name, age, gender) -> None:
+#         super().__init__(name, age, gender)
+        
+
+
+# murad = Murad("Murad", 20, "male")
+# murad.introduce()
+        
+
+
+#------------ abstract classes
+
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+    
+    @abstractmethod
+    def perimeter(self):
+        pass
+    
+class Rectangle(Shape):
+    def __init__(self, length, width) -> None:
+        self.length = length
+        self.width = width
+        
+    def area(self):
+        print(self.length * self.width)
+        
+    def perimeter(self):
+        print(2 * (self.length + self.width))
+        
+
+rectangle = Rectangle(10, 5)
+rectangle.area()
+rectangle.perimeter()
