@@ -665,29 +665,59 @@ import shutil
 
 #------------ abstract classes
 
-from abc import ABC, abstractmethod
+# from abc import ABC, abstractmethod
 
-class Shape(ABC):
-    @abstractmethod
-    def area(self):
-        pass
+# class Person(ABC):
+#     @abstractmethod
+#     def introduce(self):
+#         pass
+#     @abstractmethod
+#     def eat(self):
+#         pass
+#     @abstractmethod
+#     def sleep(self):
+#         pass
+#     @abstractmethod
+#     def drink(self):
+#         pass
     
-    @abstractmethod
-    def perimeter(self):
-        pass
-    
-class Rectangle(Shape):
-    def __init__(self, length, width) -> None:
-        self.length = length
-        self.width = width
+
+# class Murad(Person):
+#     def __init__(self, name) -> None:
+#         self.name = name
         
-    def area(self):
-        print(self.length * self.width)
+#     def introduce(self):
+#         print(f"Hi, my name is {self.name}")
         
-    def perimeter(self):
-        print(2 * (self.length + self.width))
+#     def eat(self):
+#         print("eating")
+        
+#     def sleep(self):
+#         print("sleeping")
+        
+#     def drink(self):
+#         print("drinking")
         
 
-rectangle = Rectangle(10, 5)
-rectangle.area()
-rectangle.perimeter()
+# murad = Murad("Murad")
+# murad.introduce()
+# murad.eat()
+# murad.sleep()
+# murad.drink()
+
+
+#------------ objects as arguments
+
+# class Car:
+#     color = None
+    
+
+# def change_color(car, color):
+#     car.color = color
+    
+    
+
+# car = Car()
+
+# change_color(car, "red")
+# print(car.color)
