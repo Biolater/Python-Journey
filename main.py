@@ -708,14 +708,14 @@ import shutil
 
 #------------ objects as arguments
 
-class Person:
-    name = None
+# class Person:
+#     name = None
     
 
-def change_name(person, name):
-    person.name = name
+# def change_name(person, name):
+#     person.name = name
     
 
-murad = Person()
-change_name(murad, "Murad")
-print(murad.name)
+# murad = Person()
+# change_name(murad, "Murad")
+# print(murad.name)
