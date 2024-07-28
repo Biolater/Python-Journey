@@ -708,16 +708,14 @@ import shutil
 
 #------------ objects as arguments
 
-# class Car:
-#     color = None
+class Person:
+    name = None
     
 
-# def change_color(car, color):
-#     car.color = color
-    
+def change_name(person, name):
+    person.name = name
     
 
-# car = Car()
-
-# change_color(car, "red")
-# print(car.color)
+murad = Person()
+change_name(murad, "Murad")
+print(murad.name)
