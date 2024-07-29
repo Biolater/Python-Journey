@@ -719,3 +719,25 @@ import shutil
 # murad = Person()
 # change_name(murad, "Murad")
 # print(murad.name)
+
+
+#------------ duck typing
+
+
+# class Person:
+#     def __init__(self, gender):
+#         self.gender = gender
+        
+#     def walk(self):
+#         print("walking")
+        
+
+# class Student:
+#     def study(self, obj):
+#         print(f"{obj.gender} is studying")
+        
+
+# person = Person("Male")
+# student = Student()
+
+# student.study(person)
