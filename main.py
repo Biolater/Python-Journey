@@ -740,4 +740,33 @@ import shutil
 # person = Person("Male")
 # student = Student()
 
-# student.study(person)
+# student.study(person) 
+
+
+
+#------------ walrus operator
+
+# print(happy := True)
+
+# foods = []
+
+# while food := input("Enter food: ") != "quit":
+#     foods.append(food)
+
+# print(foods)
+    
+    
+
+
+sample_data = [
+    {"userId": 1,  "name": "rahul", "completed": False},
+    {"userId": 1, "name": "rohit", "completed": False},
+    {"userId": 1,  "name": "ram", "completed": False},
+    {"userId": 1,  "name": "ravan", "completed": True}
+]
+ 
+print("With Python 3.8 Walrus Operator:") 
+for entry in sample_data: 
+    if name := entry.get("name"):
+        print(f'Found name: "{name}"')
+ 
