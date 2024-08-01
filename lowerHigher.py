@@ -1,19 +1,31 @@
 import random
-total_guesses = 0
-random_number = random.randint(1, 100)
+number = random.randint(1, 9)
 
-while True:
-    try:
-        guess = int(input("Guess a number between 1 and 100: "))
-        total_guesses += 1
-        if guess < random_number:
-            print("Too low, try again!")
-        elif guess > random_number:
-            print("Too high, try again!")
-        elif guess == random_number:
-            break
 
-    except ValueError:
-        print("Invalid input!")
 
-print(f"You guessed the number in {total_guesses} guesses!")10
+def play_game():
+    while True:
+        try:
+            guess = int(input("Guess a number between 1 and 9: "))
+            if guess == number:
+                print("You guessed correctly!")
+                play_again()
+                break
+            elif guess < number:
+                print("Higher")
+                continue
+            else:
+                print("Lower")
+                continue
+        except ValueError:
+            print("Invalid input! Please enter a number.")
+            continue
+    
+def play_again():
+    choice = input("Do you want to play again? (y/n): ").lower().startswith("y")
+    if choice:
+        play_game()
+    else:
+        print("Thanks for playing!")    
+    
+play_game()    
