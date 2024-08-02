@@ -774,13 +774,32 @@ import shutil
 
 #------------ functions as variables
 
-# def hello() -> str:
-#     print("hello")
+# def add(n1, n2):
+#     print(n1 + n2)
     
-# hi = hello
+# calculate = add
 
-# hi()
+# calculate(1,2)
 
-# say = print
 
-# say("Saaa")
+#------------ higher order functions
+
+# def loud(text: str) -> str:
+#     return text.upper()
+
+# def quiet(text: str) -> str:
+#     return text.lower()
+
+# def talk (func, text):
+#     print(func(text))
+    
+# talk(loud, "murad")
+# talk(quiet, "yusubov")
+
+# def add (n1,n2):
+#     return n1+n2
+
+# def calculate(n1, n2):
+#     print(add(n1, n2))
+    
+# calculate(1,2)
