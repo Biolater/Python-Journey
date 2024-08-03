@@ -811,7 +811,7 @@ import shutil
 
 # introduce = lambda name: print(f"Hi, my name is {name}")
 
-add = lambda n1, n2: print(n1 + n2)
+# add = lambda n1, n2: print(n1 + n2)
 
-add(2,3)
+# add(2,3)
 
