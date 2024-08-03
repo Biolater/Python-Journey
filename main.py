@@ -803,3 +803,15 @@ import shutil
 #     print(add(n1, n2))
     
 # calculate(1,2)
+
+
+#------------ lambda functions
+
+# x = lambda x: x**2
+
+# introduce = lambda name: print(f"Hi, my name is {name}")
+
+add = lambda n1, n2: print(n1 + n2)
+
+add(2,3)
+
