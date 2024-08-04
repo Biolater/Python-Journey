@@ -493,6 +493,31 @@ import shutil
 # car.drive()
 # car.stop()
 
+# class Shop:
+#     def __init__(self, name, items):
+#         self.name = name
+#         self.items = items
+
+#     def get_items_count(self):
+#         return len(self.items)
+    
+#     def get_items(self):
+#         return self.items
+    
+#     def add_item(self, item):
+#         self.items.append(item)
+        
+#     def remove_item(self, item):
+#         self.items.remove(item)
+        
+
+# shop = Shop("My Shop", ["apple", "banana", "orange"])
+
+
+# shop.add_item("bread")
+
+# print(shop.get_items())
+
 
 #------------ class inheritance
 
@@ -754,8 +779,17 @@ import shutil
 #     foods.append(food)
 
 # print(foods)
-    
-    
+
+# numbers = [1,2,3,4,5,6,7,8,9,10]
+
+# while True:
+#     if (num := int(input("Enter number: "))) in numbers:
+#         print(num)
+#         break
+#     else:
+#         print("Enter a valid number")
+#         continue
+        
 
 
 # sample_data = [
@@ -774,12 +808,13 @@ import shutil
 
 #------------ functions as variables
 
-# def add(n1, n2):
-#     print(n1 + n2)
+# def introduce(name):
+#     print(f"Hi, my name is {name}")
     
-# calculate = add
 
-# calculate(1,2)
+# name = introduce
+
+# name("murad")
 
 
 #------------ higher order functions
@@ -815,3 +850,6 @@ import shutil
 
 # add(2,3)
 
+# subtract = lambda n1, n2 : print(n1 - n2)
+
+# subtract(2, 3)
