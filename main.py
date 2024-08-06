@@ -440,8 +440,8 @@ import shutil
 
 #------------ move a file
 
-# source = "C:\\Users\\yusif\\OneDrive\\Masaüstü\\a.txt"
-# destination = "C:\\Users\\yusif\\OneDrive\\Masaüstü\\pycharm\\Python-Journey\\a.txt"
+# source = "C:\\Users\\yusif\\OneDrive\\Masaüstü\\Health_Small.png"
+# destination = "C:\\Users\\yusif\\OneDrive\\Masaüstü\\pycharm\\Health-Bar\\assets\\Health-Small.png"
 
 # try:
 #     if(os.path.exists(destination)):
@@ -842,14 +842,30 @@ import shutil
 
 #------------ lambda functions
 
-# x = lambda x: x**2
+# add = lambda n1,n2 : n1 + n2
 
-# introduce = lambda name: print(f"Hi, my name is {name}")
+# random_n = lambda : random.randint(1, 100)
 
-# add = lambda n1, n2: print(n1 + n2)
+# print(add(1,2))
+# print(random_n())
 
-# add(2,3)
 
-# subtract = lambda n1, n2 : print(n1 - n2)
+#------------ sort
 
-# subtract(2, 3)
+# students = ["Cem", "Bilal", "Atakan"]
+
+# # students.sort(reverse=True)
+
+# sorted_students = sorted(students)
+
+students = [
+    {"name": "Cem", "age": 24},
+    {"name": "Bilal", "age": 22},
+    {"name": "Atakan", "age": 29}
+]
+
+
+# students.sort(key=lambda student: len(student["name"]))
+
+
+print(students)
