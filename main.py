@@ -842,30 +842,45 @@ import shutil
 
 #------------ lambda functions
 
-# add = lambda n1,n2 : n1 + n2
-
-# random_n = lambda : random.randint(1, 100)
-
-# print(add(1,2))
-# print(random_n())
+# introduce = lambda name, age: f"Hi, my nae is {name}. Im {age} years old"
 
 
 #------------ sort
 
-# students = ["Cem", "Bilal", "Atakan"]
+# numbers = [5, 2, 1, 4, 3]
+# users = [
+#     ("murad", 25, "male"),
+#     ("yusif", 30, "male"),
+#     ("meryem", 28, "female"),
+#     ("mehemmed", 40, "male"),
+# ]
 
-# # students.sort(reverse=True)
+# numbers.sort()
+# numbers.sort(reverse=True)
 
-# sorted_students = sorted(students)
+# users.sort(key=lambda user: user[1])
+# users.sort(key=lambda user: user[0])
+# sorted_users = sorted(users, key=lambda user: user[1])
 
-students = [
-    {"name": "Cem", "age": 24},
-    {"name": "Bilal", "age": 22},
-    {"name": "Atakan", "age": 29}
+
+#------------ map
+
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# to_double = lambda num: num * 2
+
+# doubled_numbers = list(map(to_double, numbers))
+
+
+users = [
+    ("murad", 25, "male"),
+    ("yusif", 30, "male"),
+    ("meryem", 28, "female"),
+    ("mehemmed", 40, "male"),
 ]
 
+double_age = lambda user: (user[0], user[1] * 2, user[2])
 
-# students.sort(key=lambda student: len(student["name"]))
+doubled_ages = list(map(double_age, users))
 
-
-print(students)
+print(doubled_ages)
