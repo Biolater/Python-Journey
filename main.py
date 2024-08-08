@@ -847,40 +847,48 @@ import shutil
 
 #------------ sort
 
-# numbers = [5, 2, 1, 4, 3]
-# users = [
-#     ("murad", 25, "male"),
-#     ("yusif", 30, "male"),
-#     ("meryem", 28, "female"),
-#     ("mehemmed", 40, "male"),
-# ]
+# numbers = [5,2,4,3,1]
+# users = [("Murad", 24),
+#          ("Akif", 16),
+#          ("Namid", 34)]
 
+
+# users.sort()
+# users.sort(reverse=True)
+# users.sort(key=lambda user: user[1])
+# sorted_users = sorted(users)
+# reversed_sorted_users = sorted(users, reverse=True)
+# sorted_by_age = sorted(users, key=lambda user: user[1])
 # numbers.sort()
 # numbers.sort(reverse=True)
-
-# users.sort(key=lambda user: user[1])
-# users.sort(key=lambda user: user[0])
-# sorted_users = sorted(users, key=lambda user: user[1])
+# sorted_numbers = sorted(numbers)
+# reversed_sorted_numbers = sorted(numbers, reverse=True)
 
 
 #------------ map
 
-# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# numbers = [1,2,3,4,5,6,7,8,9,10]
 
-# to_double = lambda num: num * 2
+# doubled_numbers = list(map(lambda n: n*2, numbers))
 
-# doubled_numbers = list(map(to_double, numbers))
+# user = [("Murad", 17, "Baku")]
+
+# mapped_user = list(map(lambda user: (user[0], user[1] * 2, user[2]), user))
+
+# print(mapped_user)
+
+#------------ filter
+
+numbers = [1,2,3,4,5,6,7,8,9,10]
+friends = [("Mike",25),
+           ("John",33),
+           ("Rachel", 18)]
+
+# age_more_than_five = list(filter(lambda age: age > 5, numbers))
+# age_less_than_five = list(filter(lambda age: age < 5, numbers))
+# only_18 = lambda friend: friend[1] == 18
+# above_18 = lambda friend: friend[1] > 18
+
+# print(list(filter(above_18, friends)))
 
 
-users = [
-    ("murad", 25, "male"),
-    ("yusif", 30, "male"),
-    ("meryem", 28, "female"),
-    ("mehemmed", 40, "male"),
-]
-
-double_age = lambda user: (user[0], user[1] * 2, user[2])
-
-doubled_ages = list(map(double_age, users))
-
-print(doubled_ages)
