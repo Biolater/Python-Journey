@@ -847,48 +847,47 @@ import shutil
 
 #------------ sort
 
-# numbers = [5,2,4,3,1]
-# users = [("Murad", 24),
-#          ("Akif", 16),
-#          ("Namid", 34)]
+# numbers = [9,1,8,2,7,3,6,4,5]
 
-
-# users.sort()
-# users.sort(reverse=True)
-# users.sort(key=lambda user: user[1])
-# sorted_users = sorted(users)
-# reversed_sorted_users = sorted(users, reverse=True)
-# sorted_by_age = sorted(users, key=lambda user: user[1])
 # numbers.sort()
-# numbers.sort(reverse=True)
-# sorted_numbers = sorted(numbers)
-# reversed_sorted_numbers = sorted(numbers, reverse=True)
+
+# print(numbers)
 
 
 #------------ map
 
-# numbers = [1,2,3,4,5,6,7,8,9,10]
+# store = [{
+#     "store_name": "Murad Store",
+#     "products_count": 26,
+#     "store_owner": "Murad",
+# }]
 
-# doubled_numbers = list(map(lambda n: n*2, numbers))
+# mapped_store = list(map(lambda store: {"store_name": store['store_name'], "products_count": store['products_count'] * 2, "store_owner": store['store_owner'] }, store))
 
-# user = [("Murad", 17, "Baku")]
 
-# mapped_user = list(map(lambda user: (user[0], user[1] * 2, user[2]), user))
 
-# print(mapped_user)
 
 #------------ filter
 
-numbers = [1,2,3,4,5,6,7,8,9,10]
-friends = [("Mike",25),
-           ("John",33),
-           ("Rachel", 18)]
+# numbers = [1,2,3,4,5,6,7,8,9]
 
-# age_more_than_five = list(filter(lambda age: age > 5, numbers))
-# age_less_than_five = list(filter(lambda age: age < 5, numbers))
-# only_18 = lambda friend: friend[1] == 18
-# above_18 = lambda friend: friend[1] > 18
+# bigger_than_five = list(filter(lambda n: n > 5, numbers))
 
-# print(list(filter(above_18, friends)))
+# users = [{"name": "Murad", "age": 17}, {"name": "Akif", "age": 16}, {"name": "Namid", "age": 34}]
 
+# cars = [("bmw", 2019), ("audi", 2018), ("mercedes", 2020)]
+
+# filtered_users = list(filter(lambda user: user['age'] > 18, users))
+
+# filtered_cars = list(filter(lambda car: car[0] == "bmw", cars))
+
+
+#------------ reduce
+
+# import functools
+
+# numbers = [1,2,3,4,5,6,7,8,9]
+# letters = ["a", "b", "c", "d", "e", "f"]
+# sum = functools.reduce(lambda n1, n2: n1 + n2, numbers)
+# combined_letters = functools.reduce(lambda letter1, letter2: letter1 + letter2, letters)
 
