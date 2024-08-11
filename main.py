@@ -847,47 +847,62 @@ import shutil
 
 #------------ sort
 
-# numbers = [9,1,8,2,7,3,6,4,5]
+# numbers = [8,4,6,2,1,7,5,3]
+
+# users = [{"name": "Murad", "age": 17}, {"name": "Akif", "age": 16}, {"name": "Namid", "age": 34}]
+
+# users.sort(key=lambda user: user['age'])
+
+# users.sort(key=lambda user: user['name'])
 
 # numbers.sort()
 
-# print(numbers)
+# numbers.sort(reverse=True)
 
 
 #------------ map
 
-# store = [{
-#     "store_name": "Murad Store",
-#     "products_count": 26,
-#     "store_owner": "Murad",
-# }]
+# numbers = [1,2,3,4,5,6,7,8]
 
-# mapped_store = list(map(lambda store: {"store_name": store['store_name'], "products_count": store['products_count'] * 2, "store_owner": store['store_owner'] }, store))
+# doubled = list(map(lambda n: n*2, numbers))
 
+# cars = [("bmw", 2019), ("audi", 2018), ("mercedes", 2020)]
 
+# doubled_year = list(map(lambda car: (car[0], car[1] + 5), cars))
 
+# print(doubled_year)
 
 #------------ filter
 
 # numbers = [1,2,3,4,5,6,7,8,9]
 
-# bigger_than_five = list(filter(lambda n: n > 5, numbers))
+# more_than_4 = list(filter(lambda n: n > 4, numbers))    
 
-# users = [{"name": "Murad", "age": 17}, {"name": "Akif", "age": 16}, {"name": "Namid", "age": 34}]
+# uploaded_videos = [{
+#     "title": "Introduction to Python",
+#     "views": 100,
+#     "likes": 50
+# }, {
+#     "title": "Introduction to C++",
+#     "views": 1000,
+#     "likes": 500
+# }, {
+#     "title": "Introduction to C#",
+#     "views": 10000,
+#     "likes": 5000
+# }]
 
-# cars = [("bmw", 2019), ("audi", 2018), ("mercedes", 2020)]
-
-# filtered_users = list(filter(lambda user: user['age'] > 18, users))
-
-# filtered_cars = list(filter(lambda car: car[0] == "bmw", cars))
-
+# filtered = list(filter(lambda video: video["views"] > 1000, uploaded_videos))
 
 #------------ reduce
 
 # import functools
 
 # numbers = [1,2,3,4,5,6,7,8,9]
-# letters = ["a", "b", "c", "d", "e", "f"]
+
 # sum = functools.reduce(lambda n1, n2: n1 + n2, numbers)
-# combined_letters = functools.reduce(lambda letter1, letter2: letter1 + letter2, letters)
+
+# letters = ["A", "B", "C"]
+
+# summed_letters = functools.reduce(lambda letter1, letter2: letter1 + letter2, letters)
 
