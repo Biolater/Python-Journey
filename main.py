@@ -906,3 +906,19 @@ import shutil
 
 # summed_letters = functools.reduce(lambda letter1, letter2: letter1 + letter2, letters)
 
+#------------ list comprehensions
+
+# squares = [n**2 for n in range(1,11)]
+# triples = [n**3 for n in range(1,11)]
+# students = [10,60,30,40,50,20]
+# fruits = ["apple", "banana", "cherry", "kiwi", "mango", "ananas"]
+# a_fruits = [fruit for fruit in fruits if fruit.startswith("a")]
+# numbers = [1,2,3,4,5,6,7,8,9,10]
+# evens = [number if number % 2 == 0 else "Odd" for number in numbers]
+# evens = [number for number in numbers if number % 2 == 0]
+
+# over_20 = [student for student in students if student >= 30]
+
+# passed_students = [student if student >= 30 else "Failed" for student in students]
+
+
