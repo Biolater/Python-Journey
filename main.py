@@ -908,17 +908,42 @@ import shutil
 
 #------------ list comprehensions
 
-# squares = [n**2 for n in range(1,11)]
-# triples = [n**3 for n in range(1,11)]
-# students = [10,60,30,40,50,20]
-# fruits = ["apple", "banana", "cherry", "kiwi", "mango", "ananas"]
-# a_fruits = [fruit for fruit in fruits if fruit.startswith("a")]
+# doubled_ints = [n*2 for n in range(1,11)]
+# students = [{"name": "murad", "age": 17}, {"name": "akif", "age": 16}, {"name": "namid", "age": 34}]
+# cars = [("bmw", 2019), ("audi", 2018), ("mercedes", 2020)]
+# filtered = [student for student in students if student['age'] > 18]
+# filtered = [student if student['age'] > 18 else "Not allowed" for student in students]
+# mapped = [(car[0], car[1] + 5) for car in cars if car[1] > 2018]
+
+
+#------------ dictionary comprehensions
+
+
+# def check_temp(temp):
+#     if temp > 70:
+#         return "hot"
+#     elif temp < 30:
+#         return "cold"
+#     else:
+#         return "moderate"
+
+# cities_in_F = {"New York": 32, "Boston": 75, "Los Angeles": 100, "Chicago": 50}
+
+# cities_in_C = {city: ((temp - 32) * 5 / 9) for (city, temp) in cities_in_F.items()}
+
+# cities = {"New York": 32, "Boston": 75, "Los Angeles": 100, "Chicago": 50}
+
+# weather = {"New York": "snowing", "Boston": "sunny", "Los Angeles": "sunny", "Chicago": "cloudy"}
+
+# sunny_cities = {key: value for (key, value) in weather.items() if value == "sunny"}
+
+# desc_cities = {key: check_temp(value) for (key, value) in cities.items()}
+
 # numbers = [1,2,3,4,5,6,7,8,9,10]
-# evens = [number if number % 2 == 0 else "Odd" for number in numbers]
-# evens = [number for number in numbers if number % 2 == 0]
 
-# over_20 = [student for student in students if student >= 30]
+# squares = {n: n**2 for n in numbers}
 
-# passed_students = [student if student >= 30 else "Failed" for student in students]
+# people = [('Alice', 30), ('Bob', 25), ('Charlie', 35)]
 
+# dict_people = {person: age for (person, age) in people}
 
