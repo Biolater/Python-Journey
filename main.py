@@ -874,76 +874,48 @@ import shutil
 
 #------------ filter
 
-# numbers = [1,2,3,4,5,6,7,8,9]
+# numbers = list(range(1,101))
+# only_even = lambda n: n % 2 == 0
+# evens = list(filter(only_even, numbers))
 
-# more_than_4 = list(filter(lambda n: n > 4, numbers))    
-
-# uploaded_videos = [{
-#     "title": "Introduction to Python",
-#     "views": 100,
-#     "likes": 50
-# }, {
-#     "title": "Introduction to C++",
-#     "views": 1000,
-#     "likes": 500
-# }, {
-#     "title": "Introduction to C#",
-#     "views": 10000,
-#     "likes": 5000
-# }]
-
-# filtered = list(filter(lambda video: video["views"] > 1000, uploaded_videos))
 
 #------------ reduce
-
-# import functools
-
-# numbers = [1,2,3,4,5,6,7,8,9]
-
+# numbers = list(range(1,101))
 # sum = functools.reduce(lambda n1, n2: n1 + n2, numbers)
-
-# letters = ["A", "B", "C"]
-
-# summed_letters = functools.reduce(lambda letter1, letter2: letter1 + letter2, letters)
+# max = functools.reduce(lambda n1, n2: max(n1, n2), numbers)
 
 #------------ list comprehensions
 
-# doubled_ints = [n*2 for n in range(1,11)]
-# students = [{"name": "murad", "age": 17}, {"name": "akif", "age": 16}, {"name": "namid", "age": 34}]
-# cars = [("bmw", 2019), ("audi", 2018), ("mercedes", 2020)]
-# filtered = [student for student in students if student['age'] > 18]
-# filtered = [student if student['age'] > 18 else "Not allowed" for student in students]
-# mapped = [(car[0], car[1] + 5) for car in cars if car[1] > 2018]
-
+# squares = [number * 2 for number in range(1,11)]
+# evens = [number for number in range(1,101) if number % 2 == 0]
+# strings = ["Hello", "World", "Apple", "Murad", "Comprehensions", "Multiply"]
+# lowercase_strings = [string.lower() for string in strings]
+# list_of_lists = [["list1"],["list2"], ["list3"]]
+# flatten_list = [item for sublist in list_of_lists for item in sublist]
 
 #------------ dictionary comprehensions
 
 
-# def check_temp(temp):
-#     if temp > 70:
-#         return "hot"
-#     elif temp < 30:
-#         return "cold"
-#     else:
-#         return "moderate"
+# squares = { number: number * 2 for number in range(1, 11) }
+# strings = ["Hello", "World", "Apple", "Murad", "Comprehensions", "Multiply"]
+# length_of_strings = { word: len(word) for word in strings }
+# even_odd = { number: "Even" if number % 2 == 0 else "Odd" for number in range(1, 21) }
+# words = ["esma", "murad", "ayxan", "simran"]
+# upper_words = { word: word.upper() for word in words }
+# students = [
+#     {"name": "Alice", "math": 85, "science": 78, "history": 65},
+#     {"name": "Bob", "math": 55, "science": 72, "history": 80},
+#     {"name": "Charlie", "math": 90, "science": 85, "history": 88}
+# ]
 
-# cities_in_F = {"New York": 32, "Boston": 75, "Los Angeles": 100, "Chicago": 50}
+# filtered = { student['name']: { subject: score for subject, score in student.items() if subject != "name" and score > 70 } for student in students }
 
-# cities_in_C = {city: ((temp - 32) * 5 / 9) for (city, temp) in cities_in_F.items()}
 
-# cities = {"New York": 32, "Boston": 75, "Los Angeles": 100, "Chicago": 50}
+#------------ zip function
 
-# weather = {"New York": "snowing", "Boston": "sunny", "Los Angeles": "sunny", "Chicago": "cloudy"}
+usernames = ["Dude", "Bro", "Mister"]
+passwords = ("p@ssword", "abc123", "lol")
 
-# sunny_cities = {key: value for (key, value) in weather.items() if value == "sunny"}
+users = list(zip(usernames, passwords))
 
-# desc_cities = {key: check_temp(value) for (key, value) in cities.items()}
-
-# numbers = [1,2,3,4,5,6,7,8,9,10]
-
-# squares = {n: n**2 for n in numbers}
-
-# people = [('Alice', 30), ('Bob', 25), ('Charlie', 35)]
-
-# dict_people = {person: age for (person, age) in people}
 
