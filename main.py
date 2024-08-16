@@ -868,9 +868,7 @@ import shutil
 
 # cars = [("bmw", 2019), ("audi", 2018), ("mercedes", 2020)]
 
-# doubled_year = list(map(lambda car: (car[0], car[1] + 5), cars))
-
-# print(doubled_year)
+# doubled_year = list(map(lambda car: (car[0], car[1] * 2), cars))
 
 #------------ filter
 
@@ -886,36 +884,38 @@ import shutil
 
 #------------ list comprehensions
 
-# squares = [number * 2 for number in range(1,11)]
-# evens = [number for number in range(1,101) if number % 2 == 0]
-# strings = ["Hello", "World", "Apple", "Murad", "Comprehensions", "Multiply"]
-# lowercase_strings = [string.lower() for string in strings]
-# list_of_lists = [["list1"],["list2"], ["list3"]]
-# flatten_list = [item for sublist in list_of_lists for item in sublist]
+# squares = [number*2 for number in range(1,21)]
+# filtered = [number for number in range(1,51) if number % 2 == 0]
+# nested_list = [[1, 2], [3, 4, 5], [6, 7]]
+# flattened_list = [item for sublist in nested_list for item in sublist]
+# words = ["apple", "banana", "cherry"]
+# first_letters = [word[0] for word in words]
 
 #------------ dictionary comprehensions
 
 
-# squares = { number: number * 2 for number in range(1, 11) }
+# squares = { number: number * 2 for number in range(1,11) }
 # strings = ["Hello", "World", "Apple", "Murad", "Comprehensions", "Multiply"]
-# length_of_strings = { word: len(word) for word in strings }
-# even_odd = { number: "Even" if number % 2 == 0 else "Odd" for number in range(1, 21) }
-# words = ["esma", "murad", "ayxan", "simran"]
-# upper_words = { word: word.upper() for word in words }
-# students = [
-#     {"name": "Alice", "math": 85, "science": 78, "history": 65},
-#     {"name": "Bob", "math": 55, "science": 72, "history": 80},
-#     {"name": "Charlie", "math": 90, "science": 85, "history": 88}
-# ]
-
-# filtered = { student['name']: { subject: score for subject, score in student.items() if subject != "name" and score > 70 } for student in students }
+# length_of_strings = { string: len(string) for string in strings }
+# even_odd = { number: "Even" if number % 2 == 0 else "Odd" for number in range(1,21) }
+# sentence = "I love you so much, very very much"
+# splitted = sentence.split()
+# frequency = { word: splitted.count(word) for word in splitted }
 
 
 #------------ zip function
 
-usernames = ["Dude", "Bro", "Mister"]
-passwords = ("p@ssword", "abc123", "lol")
+# usernames = ["Biolater", "mury.ash", "feeezss"]
+# passwords = ["linor124", "p2@ssword", "ayyyettim12"]
+# zipped = zip(usernames, passwords)
 
-users = list(zip(usernames, passwords))
 
+#------------ time module
 
+# import time
+
+# print(time.ctime(0))
+# print(time.time())
+# print(time.ctime(time.time()))
+# time_object = time.localtime()
+# print(time.strftime("%B %d %Y %H:%M:%S", time_object))
