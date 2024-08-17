@@ -914,8 +914,11 @@ import shutil
 
 # import time
 
-# print(time.ctime(0))
 # print(time.time())
+# print(time.gmtime(0))
 # print(time.ctime(time.time()))
-# time_object = time.localtime()
-# print(time.strftime("%B %d %Y %H:%M:%S", time_object))
+# for i in range(1,11):
+#     print(i)
+#     time.sleep(1)
+# print(time.localtime(time.time()))
+# print(time.strftime("%H:%M:%S", time.localtime()))
