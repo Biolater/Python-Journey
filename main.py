@@ -473,79 +473,48 @@ import shutil
 
 #------------ classes
 
-# class Car:
-#     def __init__(self, name, color, year):
+# class Person:
+#     def __init__(self, name, age, gender) -> None:
 #         self.name = name
-#         self.color = color
-#         self.year = year
-    
-#     def drive(self):
-#         print(f"{self.name} is driving")
+#         self.age = age
+#         self.gender = gender
         
-#     def stop(self):
-#         print(f"{self.name} is stopping")
-
-# car = Car("bmw", "red", 2019)
-
-# print(car.name)
-# print(car.color)
-# print(car.year)
-# car.drive()
-# car.stop()
-
-# class Shop:
-#     def __init__(self, name, items):
-#         self.name = name
-#         self.items = items
-
-#     def get_items_count(self):
-#         return len(self.items)
-    
-#     def get_items(self):
-#         return self.items
-    
-#     def add_item(self, item):
-#         self.items.append(item)
-        
-#     def remove_item(self, item):
-#         self.items.remove(item)
-        
-
-# shop = Shop("My Shop", ["apple", "banana", "orange"])
-
-
-# shop.add_item("bread")
-
-# print(shop.get_items())
-
-
-#------------ class inheritance
-
-# class Human:
-#     alive = True
-    
 #     def walk(self):
 #         print("walking")
-        
+
 #     def sleep(self):
 #         print("sleeping")
         
+#     def eat(self):
+#         print("eating")
+        
+#     def introduce(self):
+#         print(f"Hi, my name is {self.name}. I am {self.age > 1 and f'{self.age} years old' or f'{self.age} year old' }. I am {self.gender}.")
+        
 
-# class Murad(Human):
-#     pass
+# murad = Person("Murad", 20, "male")
 
+# murad.introduce()
+#------------ class inheritance
 
-# class Esma(Human):
-#     pass
-
+# class School:
+#     school_name = "244 number middle school"
     
+#     def __init__(self, name):
+#         self.name = name
+    
+#     def student(self):
+#         print(f"{self.name} is a student of {self.school_name}")
+        
+        
 
-# murad = Murad()
-# esma = Esma()
+# class Murad(School):
+#     def __init__(self, name):
+#         super().__init__(name)
 
-# print(murad.alive)
-# print(esma.alive)
+# murad = Murad("Murad")
 
+# murad.student()
 
 #------------ multilevel inheritance
 
