@@ -19,18 +19,21 @@ import shutil
 
 #------------ string methods
 
-# print(city.capitalize())
-# print(city.casefold())
-# print(city.center(60, "*"))
-# print(city.count("i"))
-# print(city.replace("i", "O"))
-# print(city.encode())
-# print(city.endswith("n"))
-# print(city[0:4].endswith("u"))
-# print(city.find("o"))
-# print(city.index("u"))
-# print(space.strip())
-# print(" ".join(splitted_city))
+name = "murad"
+lower_case = "MURAD"
+# print(name.capitalize())
+# print(lower_case.casefold())
+# print(name.center(20,"*"))
+# print(name.count("a"))
+# print(name.encode("utf-8"))
+# print(name.endswith("d"))
+# print(name.expandtabs(10))
+# print(name.find("rad"))
+# print(name.index("u"))
+# print(name.isalnum())
+# print(name.isalpha())
+# print(name.islower())
+# print(lower_case.isupper())
 
 #------------ type casting
 
@@ -49,10 +52,10 @@ import shutil
 
 #------------ input method
 
-# user_name = str(input("Enter your name: "))
+# name = str(input("Enter your name: "))
 # age = int(input("Enter your age: "))
 
-# print(f"Hello {user_name}, your age is {age}.")
+# print(f"Hello {name}, your age is {age}.")
 
 #------------ math functions
 
