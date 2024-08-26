@@ -9,28 +9,50 @@ Original file is located at
 
 import numpy as np
 
-"""List vs Numpy - Time comparison"""
+"""List vs Numpy - Time comparison
 
-from time import process_time
+Numpy Arrays
+"""
 
-python_list = [i for i in range(10000)]
+a = np.array([1,2,3,4,5,6,7])
+type(a)
 
-start_time = process_time()
+np.zeros((6,4))
 
-python_list = [i+5 for i in python_list]
+np.ones((4,5))
 
-end_time = process_time()
+np.arange(20, 61, 2)
 
-print(end_time - start_time)
+np.arange(0,11,2)
 
-np_array = np.array([i for i in range(10000)])
+np.arange(1,11).reshape((2,5))
 
-start_time = process_time()
+np.array([(1,2,3,4), (5,6,7,8)], dtype=float)
 
-np_array += 5
+np.array([[1,2,3,4], [5,6,7,8]])
 
-end_time = process_time()
+np.array([{1,2}])
 
-print(end_time - start_time)
+np.array([{1:2}])
 
-"""Numpy Arrays"""
+np.arange(0, 10000000)
+
+np.array([(1,2,3,4,66), (5,6,7,8,99)]).shape
+
+np.arange(0, 100).reshape(4,25).shape
+
+"""Initial placeholders in numpy array"""
+
+np.full((10,5), 10)
+
+"""Create an identity matrix"""
+
+a = np.eye(4)
+print(a)
+
+"""Create a numpy array with random numbers"""
+
+np.random.random((4,5))
+
+np.random.randint(0, 30, (6,5))
+
