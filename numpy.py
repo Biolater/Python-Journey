@@ -14,26 +14,27 @@ import numpy as np
 Numpy Arrays
 """
 
-a = np.array([1,2,3,4,5,6,7])
-type(a)
+numpy_array = np.array([1,2,3,4])
+print(numpy_array)
+type(numpy_array)
 
-np.zeros((6,4))
+np.zeros(5)
+np.zeros(6)
+np.zeros((5,6))
 
 np.ones((4,5))
 
-np.arange(20, 61, 2)
+np.arange(1,21)
 
 np.arange(0,11,2)
+np.arange(0,12,2)
 
-np.arange(1,11).reshape((2,5))
+np.arange(1,101,2).reshape(2,25)
+np.arange(1,11).reshape(5,2)
 
-np.array([(1,2,3,4), (5,6,7,8)], dtype=float)
+np.array([(1,2,3,4), (5,6,7,8)], dtype=int)
 
 np.array([[1,2,3,4], [5,6,7,8]])
-
-np.array([{1,2}])
-
-np.array([{1:2}])
 
 np.arange(0, 10000000)
 
@@ -43,16 +44,33 @@ np.arange(0, 100).reshape(4,25).shape
 
 """Initial placeholders in numpy array"""
 
-np.full((10,5), 10)
+np.full((5,5), 25)
 
 """Create an identity matrix"""
 
-a = np.eye(4)
+np.eye(6)
+
+"""Create a numpy array with random numbers
+
+
+"""
+
+np.random.random((5,6))
+
+np.random.randint(1,100,(5,6))
+
+"""Array of evenly spaced values"""
+
+np.linspace(1,10,8)
+
+np.linspace(0,30, 5, dtype=int)
+
+"""Convert a list to a numpy array"""
+
+list1 = [1,2,3,4,5]
+a = np.asarray(list1)
 print(a)
+type(a)
 
-"""Create a numpy array with random numbers"""
-
-np.random.random((4,5))
-
-np.random.randint(0, 30, (6,5))
+"""Analysing a numpy array"""
 
