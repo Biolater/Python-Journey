@@ -14,23 +14,17 @@ import numpy as np
 Numpy Arrays
 """
 
-numpy_array = np.array([1,2,3,4])
-print(numpy_array)
-type(numpy_array)
+np.array([1,2,3,4])
 
-np.zeros(5)
-np.zeros(6)
-np.zeros((5,6))
+np.zeros((4,5))
 
 np.ones((4,5))
 
-np.arange(1,21)
+np.arange(1,16)
 
-np.arange(0,11,2)
-np.arange(0,12,2)
+np.arange(0,17,2)
 
-np.arange(1,101,2).reshape(2,25)
-np.arange(1,11).reshape(5,2)
+np.arange(1,17).reshape(4,4)
 
 np.array([(1,2,3,4), (5,6,7,8)], dtype=int)
 
@@ -73,4 +67,37 @@ print(a)
 type(a)
 
 """Analysing a numpy array"""
+
+c = np.random.randint(10, 90, (5,5))
+print(c)
+
+# array dimensions
+
+print(c.shape)
+
+# number of dimensions
+print(c.ndim)
+
+# number of elements in an array
+print(c.size)
+
+# checking the data type presented in an array
+print(c.dtype)
+
+"""Mathematical operations in np *arrays*"""
+
+list_1 = [1,2,3,4,5]
+list_2 = [6,7,8,9,10]
+print(list_1 + list_2)
+
+a = np.random.randint(0,10,(3,3))
+b = np.random.randint(10,20,(3,3))
+print(a)
+print(b)
+
+print(a+b)
+
+print(a-b)
+print(a*b)
+print(a/b)
 
