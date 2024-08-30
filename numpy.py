@@ -11,7 +11,7 @@ import numpy as np
 
 """List vs Numpy - Time comparison
 
-Numpy Arrays
+# Numpy Arrays
 """
 
 np.array([1,2,3,4])
@@ -53,7 +53,7 @@ np.random.random((5,6))
 
 np.random.randint(1,100,(5,6))
 
-"""Array of evenly spaced values"""
+"""# Array of evenly spaced values"""
 
 np.linspace(1,10,8)
 
@@ -66,7 +66,7 @@ a = np.asarray(list1)
 print(a)
 type(a)
 
-"""Analysing a numpy array"""
+"""# Analysing a numpy array"""
 
 c = np.random.randint(10, 90, (5,5))
 print(c)
@@ -84,7 +84,7 @@ print(c.size)
 # checking the data type presented in an array
 print(c.dtype)
 
-"""Mathematical operations in np *arrays*"""
+"""# Mathematical operations in np *arrays*"""
 
 list_1 = [1,2,3,4,5]
 list_2 = [6,7,8,9,10]
@@ -101,3 +101,24 @@ print(a-b)
 print(a*b)
 print(a/b)
 
+array = np.random.randint(1,16, (2, 8))
+print(array)
+print(array.shape)
+
+trans = np.transpose(array)
+print(trans)
+print(trans.shape)
+
+trans2 = array.T
+print(trans2)
+print(trans2.shape)
+
+"""# Reshaping an array"""
+
+a = np.random.randint(1,10, (2,3))
+print(a)
+print(a.shape)
+
+a = a.reshape(3,2)
+print(a)
+print(a.shape)
