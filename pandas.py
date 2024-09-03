@@ -10,6 +10,7 @@ Importing pandas
 """
 
 import pandas as pd
+import numpy as np
 
 from sklearn.datasets import load_iris
 
@@ -52,4 +53,33 @@ iris_df.to_csv("iris_dataset.csv")
 iris_df_csv = pd.read_csv("iris_dataset.csv")
 
 iris_df_csv.head()
+
+california_housing_df = pd.read_csv("/content/sample_data/california_housing_test.csv")
+
+california_housing_df.head()
+
+iris_df.to_csv("iris_dataset.csv", index=False)
+
+iris_df_csv = pd.read_csv("iris_dataset.csv")
+
+iris_df_csv.head()
+
+"""Creating a DataFrame with random values"""
+
+random_df = pd.DataFrame(np.random.rand(20,10))
+
+random_df.head()
+
+random_df.shape
+
+"""Inspecting a DataFrame"""
+
+# Finding number of rows and columsn
+iris_df.shape
+
+# First 5 rows of a df
+iris_df.head()
+
+# last 5 rows of a df
+iris_df.tail()
 
