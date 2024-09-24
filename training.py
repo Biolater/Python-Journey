@@ -3,6 +3,8 @@ import functools
 greeting = lambda name="there": f"Hello, {name}!"
 
 
+
+
 # print(greeting("Murad"))
 # print(greeting())
 
